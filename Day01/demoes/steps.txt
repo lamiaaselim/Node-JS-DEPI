@@ -1,0 +1,63 @@
+Resourses
+1.Node.js
+https://en.wikipedia.org/wiki/Node.js#:~:text=History,-Ryan%20Dahl%2C%20creator&text=Node.js%20was%20initially%20written,Linux%20and%20Mac%20OS%20X.
+
+2. https://felixgerschau.com/javascript-event-loop-call-stack/
+
+console.log("test") 
+setTimeout(() => { console.log("test from setTime") }, 3000)
+
+// revision on ES6
+//1- destructuring 
+import {projectName} form "./module1.js"
+
+projectName
+//2- all exported properties
+import * as module1 from "./module1.js"
+
+//3- only run the file 
+import "./mdoule1.js" //configuration file
+
+// in node js
+
+//1- take properties with destructure 
+// const {projectName}=require("./module1");
+// console.log(projectName);
+
+//2- all exported propeties
+// const module1=require("./module1");
+// console.log(module1);//.projectName);
+
+
+//3- only run the file
+// require("./module1");//==import es6
+
+
+//use default export
+const module1=require("./module1");
+
+module1();
+
+//---------- Rules in commJS  mdoules
+//1- default export and another exprts
+or only default export
+
+
+syntax --> use module.exports for all
+write default export in the begining  
+
+
+//2-  without default export
+
+syntax module.exports or shortcut( exports )
+
+/**************************************/
+Type Of modules 
+//1- user defined module like module1 and module2
+require("./module1")
+
+//2- library or module == package 
+
+//connect file using fs package in node js`
+const fs=require("fs");
+
