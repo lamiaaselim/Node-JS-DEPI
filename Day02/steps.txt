@@ -1,0 +1,110 @@
+
+// revision on ES6
+//1- destructuring 
+import {projectName} form "./module1.js"
+
+projectName
+//2- all exported properties
+import * as module1 from "./module1.js"
+
+//3- only run the file 
+import "./mdoule1.js" //configuration file
+
+// in node js
+
+//1- take properties with destructure 
+// const {projectName}=require("./module1");
+// console.log(projectName);
+
+//2- all exported propeties
+// const module1=require("./module1");
+// console.log(module1);//.projectName);
+
+
+//3- only run the file
+// require("./module1");//==import es6
+
+
+//use default export
+const module1=require("./module1");
+
+module1();
+
+//---------- Rules in commJS  mdoules
+//1- default export and another exprts
+or only default export
+
+
+syntax --> use module.exports for all
+write default export in the begining  
+
+
+//2-  without default export
+
+syntax module.exports or shortcut( exports )
+
+/**************************************/
+Type Of modules 
+//1- user defined module like module1 and module2
+require("./module1")
+
+//2- library or module == package 
+
+//connect file using fs package in node js`
+const fs=require("fs");
+
+0
+//3- external packages form npm website
+const express=require("express");
+
+inside package.json file
+//A- dependencies installation
+npm install pacjkagename1 packagename2   (--save default)
+
+
+//B-devdependencies  development time
+npm install pacjkagename --save-dev
+
+// deployment time we need only dependencies
+
+//C- global installation
+npm install pacakegename   -g
+
+
+
+
+//host the application
+a- remove node_modules 
+b-host install dependencies
+    -> cmd -> npm install  --production
+
+// moving for project folder
+a- remove node_modules 
+b- on machine or your machine  to insatll dep and devdep  
+    -> cmd -> npm install
+
+
+
+
+/********************* How to craete project from beginig ***************/
+1- craete empty folder
+2- inside project folder --> cmd -->	 
+			--> cmd   --> npm init -y
+
+3- write code and install packages
+
+
+
+
+
+// team  project
+devloper mobile application     	flutter
+devloper dashboard web application 	react
+devleoper backend               	nodejs  
+
+//-------------- development time for node js 
+
+// tesing for code 			          --command testing
+//watching errors                                 -- command
+// host   deploy for project     http://xxxxx.com  --command cmd 
+// github  upload project for backend +  host      	-- command in cmd

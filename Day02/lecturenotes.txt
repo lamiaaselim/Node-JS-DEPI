@@ -1,0 +1,68 @@
+
+// Node JS
+1- web appliaction responde html pages
+2- api  reposnde with data
+
+
+
+client
+// send http request    
+url : http://localhost:8080/students
+type :  get post patch put delete
+body : {
+
+id;1,
+name: hosam}
+headers:
+
+        stategy 1: best
+        http://localhost:8080/student      get  --> get all students
+        http://localhost:8080/student     post --> add student   --> body 
+        http://localhost:8080/student     patch --> upadte Student --> body
+        http://localhost:8080/student     delete -->delete Student --> body
+        http://localhost:8080/department  get --> get lalll departments
+
+
+        stategy2: Error Logic
+        http://localhost:8080/student	    	 post   --> update   -> body
+        http://localhost:8080/studen	  	 post   --> add
+        http://localhost:8080/student    	 get   --> get
+
+
+
+
+
+        stategy2: To sove but not Error
+        http://localhost:8080/student/update    post   --> update   -> body
+        http://localhost:8080/student/add       post   --> add
+        http://localhost:8080/student    get   --> get
+
+
+
+-- web application
+localhost:8081/login  get --> html login page
+localhost:8081/login  post --> authentication
+                                ok --> profile.html
+                                not ok --> html login page
+
+--api
+localhost:8081/login  get --> // not exist onserver
+localhost:8081/login  post --> authentication
+                            ok -> {message:"ok"}
+                            not ok -> {message:"not ok"}
+                                
+
+
+server  (restful api)   express
+
+Model -> controller-> route
+
+MVC :
+Model Folder : js files hold schema for each collection
+
+Controller Folder:   crud operations
+            js files apply crud operations on collection
+
+Routes :  requset data endpoints 
+            js files route for ech collection
+
