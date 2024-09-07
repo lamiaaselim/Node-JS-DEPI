@@ -3,18 +3,31 @@
 1- web appliaction responde html pages
 2- api  reposnde with data
 
+localhost:8000/students 
+add
+get 
+get /1
+update
+
+localhost:8000/products
+localhost:8000/teachers
 
 
 client
-// send http request    
+// send http request     ulr = endpoint = api = route
 url : http://localhost:8080/students
 type :  get post patch put delete
-body : {
-
+add & update => body : {
 id;1,
 name: hosam}
-headers:
 
+/*/ headers: {
+token : {
+id: 2222,
+role: user | admin
+}
+
+CRUD Operation => Create - Read - Update = Delete
         stategy 1: best
         http://localhost:8080/student      get  --> get all students
         http://localhost:8080/student     post --> add student   --> body 
@@ -24,15 +37,15 @@ headers:
 
 
         stategy2: Error Logic
-        http://localhost:8080/student	    	 post   --> update   -> body
-        http://localhost:8080/studen	  	 post   --> add
+        http://localhost:8080/student/upate	 post   --> update   -> body
+        http://localhost:8080/studen/add  	 post   --> add
         http://localhost:8080/student    	 get   --> get
 
 
 
 
 
-        stategy2: To sove but not Error
+        stategy2: To solve but not Error
         http://localhost:8080/student/update    post   --> update   -> body
         http://localhost:8080/student/add       post   --> add
         http://localhost:8080/student    get   --> get
