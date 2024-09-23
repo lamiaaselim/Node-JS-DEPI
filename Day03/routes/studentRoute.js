@@ -9,6 +9,7 @@ router.route("/student")
        .patch(controller.updateStudent)   //-> id, newName,newAge
     
 
+       // endpoint = api = route = url
 // router.get("/student/:id",controller.getStudentById);
 // router.delete("/student/:id",controller.deleteStudent)
 
